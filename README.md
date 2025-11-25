@@ -26,7 +26,7 @@ UART to USB Driver - Help LoRa Module communicate with LapTop
 
 If putty or VNC suddenly disconnected, just pull the plug and put it in again.
 
-Watch this video for the step by step setup: https://www.youtube.com/watch?v=F5OYpPUJiOw&t=239s (They don't include RF_Setting and the Driver part btw, it's a thing for LoRa)
+Watch this video for the step by step setup for the Raspberry Pi: https://www.youtube.com/watch?v=F5OYpPUJiOw&t=239s (They don't include RF_Setting and the Driver part btw, it's a thing for LoRa)
 
 ---
 ![M](./Image/Mapping.png?v=1)
