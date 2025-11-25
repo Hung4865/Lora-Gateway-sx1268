@@ -3,7 +3,7 @@ Please leave a star if you find me useful!
 
 ---
 
-In this repo I have uploaded the 3 folder that came from the waveshare demo from their website https://www.waveshare.com/wiki/SX1268_433M_LoRa_HAT and 1 additional demo (MyCode) made by me which is built upon their original code. For the waveshare tutorial, you can go to their website. I will only be explaining the setup for mine below 
+In this repo I have uploaded the 3 folder that came from the waveshare demo from their website https://www.waveshare.com/wiki/SX1268_433M_LoRa_HAT and 1 additional demo (MyCode) made by me which is built upon their original code. For the waveshare tutorial, you can go to their website. I will only be explaining the setup for mine below.
 
 ---
 ![Diagram](./Image/Diagram.jpg?v=1)
@@ -34,7 +34,7 @@ Watch this video for the step by step setup: https://www.youtube.com/watch?v=F5O
 We can change the mode that of our sx1268. Notice that there are 2 coloums and 6 rows. The first 3 row is for the UART Selection, conbine 2 rows will let you enter each A,B,C mode. The 3 rows below is for LoRa mode selection. The jumper will always be put vertically connecting 2 rows together.
 
 ---
-This is the interface of RF_Setting. Make sure the end node and gateway node address is different from each other. Everyother parameter must be the same between the 2 nodes.
+This is the interface of RF_Setting. Make sure the end node and gateway node address is different from each other. Everyother parameter must be the same between the 2 nodes. Otherwise, The trasmission will fail.
 ![po](./Image/RF.png?v=1)
 
 Everytime you that you change the a parameter in RF_Setting, you need to adjust the jumpers to mode A (the first 2 rows) and short M0, open M1.
