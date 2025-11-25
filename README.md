@@ -36,6 +36,7 @@ This is the interface of RF_Setting. Make sure each device address is different 
 ![po](./Image/RF.png?v=1)
 
 Everytime you that you change the a parameter in RF_Setting, you need to adjust the jumpers to mode A (the first 2 rows) and short M0, open M1.
+
 ![ppng](./Image/Config.jgg?v=1)
 
 Make sure you press Set Para button and it said that you succeed. If if it said you failed, Pull out all the cables, restart RF_Setting and try again.
