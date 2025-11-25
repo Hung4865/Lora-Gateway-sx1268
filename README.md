@@ -32,7 +32,7 @@ Watch this video for the step by step setup: https://www.youtube.com/watch?v=F5O
 We can change the mode that of our sx1268. Notice that there are 2 coloums and 6 rows. The first 3 row is for the UART Selection, conbine 2 rows will let you enter each A,B,C mode. The 3 rows below is for LoRa mode selection. The jumper will always be put vertically connecting 2 rows together.
 
 ---
-This is the interface of RF_Setting. Make sure the end node and gateway node address is different from each other.
+This is the interface of RF_Setting. Make sure the end node and gateway node address is different from each other. Everyother parameter must be the same between the 2 nodes.
 ![po](./Image/RF.png?v=1)
 
 Everytime you that you change the a parameter in RF_Setting, you need to adjust the jumpers to mode A (the first 2 rows) and short M0, open M1.
