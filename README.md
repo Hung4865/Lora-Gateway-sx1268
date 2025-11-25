@@ -26,6 +26,7 @@ Watch this video for the step by step setup: https://www.youtube.com/watch?v=F5O
 This is the mode that our module have. Notice that there are 2 coloums and 6 rows. The first 3 row is for the UART Selection, conbine 2 rows will let you enter each A,B,C mode. The 3 rows below is for LoRa mode selection. The jumper will always be put vertically connecting 2 rows together.
 
 UART selection jumpers
+
 A: control the LoRa module through USB TO UART
 
 B: control the LoRa module through Raspberry Pi
