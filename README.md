@@ -48,12 +48,12 @@ To enter transmisson mode, you need to adjust the jumpers to mode B (the 2nd and
 
 ---
 When trying out the demo, you first need to activate the gateway node
-    ```bash
+    ```
     sudo python3 mqtt_gateway.py
     ```
 
 Then active the end node, it will send 100 packet
-    ```bash
+    ```
     sudo python3 sender.py
     ```
 
