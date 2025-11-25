@@ -3,7 +3,7 @@ Please leave a star if you find me useful!
 
 ---
 
-In this repo I have uploaded the 3 folder that came from the waveshare demo from their website https://www.waveshare.com/wiki/SX1268_433M_LoRa_HAT and 1 additional demo made by me that built upon their original code. For the waveshare tutorial, you can go to their website. I will only be explaining the setup for mine below
+In this repo I have uploaded the 3 folder that came from the waveshare demo from their website https://www.waveshare.com/wiki/SX1268_433M_LoRa_HAT and 1 additional demo made by me that built upon their original code. For the waveshare tutorial, you can go to their website. I will only be explaining the setup for mine below 
 
 ---
 ![Diagram](./Image/Diagram.jpg?v=1)
@@ -22,6 +22,8 @@ VNC - Help connect Rasbian OS GUI (sometimes you don't need Putty, VNC is enough
 
 RF_Setting - Help config our LoRa module  (you could config the moudule using code in rasbian OS, but I'm having trouble doing it. In addition, there is a line in my code that prevent the code from overwriting the RF_setting config)
 
+If putty or VNC disconnected, just pull the plug and put it in again.
+
 Watch this video for the step by step setup: https://www.youtube.com/watch?v=F5OYpPUJiOw&t=239s 
 
 ---
@@ -34,9 +36,22 @@ This is the interface of RF_Setting. Make sure each device address is different 
 ![Mapping](./Image/RF.png?v=1)
 
 Everytime you that you change the a parameter in RF_Setting, you need to adjust the jumpers to mode A (the first 2 rows) and short M0, open M1.
-![Mapping](./Image/Config.png?v=1)
+![Mapping](./Image/Config.jng?v=1)
 
 Make sure you press Set Para button and it said that you succeed. If if it said you failed, Pull out all the cables, restart RF_Setting and try again.
 ---
 To enter transmisson mode, you need to adjust the jumpers to mode A (the first 2 rows) and short M0, short M1 (because my code will work with both M0,M1). 
-![Mapping](./Image/Transmission.png?v=1)
+![Mapping](./Image/Transmission.jng?v=1)
+
+---
+When trying out the demo, you first need to activate the gateway node
+    ```bash
+    sudo python3 mqtt_gateway.py
+    ```
+
+Then active the end node, it will send 100 packet
+    ```bash
+    sudo python3 sender.py
+    ```
+
+When 100 packets is sent, press Ctrl+C on the Gateway Pi and you will see the nmber of received packet, averaged RSSI & packet error rate.
